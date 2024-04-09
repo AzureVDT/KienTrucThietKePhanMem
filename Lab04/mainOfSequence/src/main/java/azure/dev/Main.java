@@ -1,10 +1,18 @@
 package azure.dev;
 
+/**
+ * @author VoDinhThong
+ * @description Main class to run JDepend and generate report
+ * @update 4/8/2024
+ * @since 4/8/2024
+ */
+
 import jdepend.framework.JDepend;
 import jdepend.framework.JavaPackage;
 
 import java.io.*;
 import java.util.Collection;
+
 
 public class Main {
     public static void main(String[] args) throws IOException {

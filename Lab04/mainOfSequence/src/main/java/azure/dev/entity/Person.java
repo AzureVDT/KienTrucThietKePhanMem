@@ -2,20 +2,17 @@ package azure.dev.entity;
 
 /**
  * @author VoDinhThong
- * @description doing task
+ * @description Entity class representing a Person
  * @update 4/8/2024
  * @since 4/8/2024
  */
-public class Person {
-    private long id;
-    private String name;
-    private int age;
-    private String address;
-    private String email;
-    private String phone;
-
-    public Person() {
-    }
+public abstract class Person {
+    protected long id;
+    protected String name;
+    protected int age;
+    protected String address;
+    protected String email;
+    protected String phone;
 
     public Person(long id, String name, int age, String address, String email, String phone) {
         this.id = id;
@@ -26,53 +23,12 @@ public class Person {
         this.phone = phone;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+    public abstract long getId();
+    public abstract String getName();
+    public abstract int getAge();
+    public abstract String getAddress();
+    public abstract String getEmail();
+    public abstract String getPhone();
 
     @Override
     public String toString() {
@@ -85,5 +41,4 @@ public class Person {
                 ", phone='" + phone + '\'' +
                 '}';
     }
-
 }
